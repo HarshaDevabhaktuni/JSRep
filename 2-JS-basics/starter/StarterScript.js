@@ -8,6 +8,8 @@ console.log("I'm from " + country + ". It's in " + continent + ". It has a total
 alert("I'm from " + country + ". It's in " + continent + ". It has a total population of " +population + "!");
 */
 
+
+
 alert(`Welcome to the Gymnastics competetion 2020! 👻 \n           It's Dolphins 🐬 vs Koalas 🐨`);
 
 let dolphinsFirst=Number(prompt('Dolphins score for the first game'));
@@ -20,19 +22,20 @@ let koalasThird=Number(prompt('koalas score for the third game'));
 
 
 
-function favgDolphins(dolphinsFirst,dolphinsSecond,dolphinsThird){
-    console.log((dolphinsFirst+dolphinsSecond+dolphinsThird)/3);
-    return (dolphinsFirst+dolphinsSecond+dolphinsThird)/3;
+function avgScore(score1,score2,score3){
+    console.log((score1+score2+score3)/3);
+    return (score1+score2+score3)/3;
     }
 
-let avgDolphins = favgDolphins(dolphinsFirst,dolphinsSecond,dolphinsThird);
+let avgDolphins = avgScore(dolphinsFirst,dolphinsSecond,dolphinsThird);
 
+/*
 function favgKoalas(koalasFirst,koalasSecond,koalasThird){
     console.log((koalasFirst+koalasSecond+koalasThird)/3);
     return (koalasFirst+koalasSecond+koalasThird)/3;
-    }
+    }*/
 
-let avgKoalas= favgKoalas(koalasFirst,koalasSecond,koalasThird);
+let avgKoalas= avgScore(koalasFirst,koalasSecond,koalasThird);
 
  if(avgDolphins>avgKoalas){
      console.log(`Dolphins won with an average score of ${avgDolphins} 🏆`);
@@ -52,5 +55,3 @@ let avgKoalas= favgKoalas(koalasFirst,koalasSecond,koalasThird);
  else{
     console.log(`No valid scores are submitted🤐`);
  }
-
- 
