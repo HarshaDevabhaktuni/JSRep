@@ -9,7 +9,7 @@ alert("I'm from " + country + ". It's in " + continent + ". It has a total popul
 */
 
 
-
+/*
 alert(`Welcome to the Gymnastics competetion 2020! 👻 \n           It's Dolphins 🐬 vs Koalas 🐨`);
 
 let dolphinsFirst=Number(prompt('Dolphins score for the first game'));
@@ -35,6 +35,8 @@ function favgKoalas(koalasFirst,koalasSecond,koalasThird){
     return (koalasFirst+koalasSecond+koalasThird)/3;
     }*/
 
+
+    /*
 let avgKoalas= avgScore(koalasFirst,koalasSecond,koalasThird);
 
  if(avgDolphins>avgKoalas){
@@ -55,3 +57,55 @@ let avgKoalas= avgScore(koalasFirst,koalasSecond,koalasThird);
  else{
     console.log(`No valid scores are submitted🤐`);
  }
+
+ */
+
+ 
+ //Object Methods
+
+
+
+ let Mark={
+     fullName:'Mark Zuckerberg',
+    // BMI:'',
+
+    calcMarkBMI: function(){
+      let mass= prompt(`Enter the mass of ${this.fullName}`);
+       let height=prompt(`Enter the height of ${this.fullName}`);
+       this.BMI=(mass/(height*height));
+       return (mass/(height*height));
+          }
+ };
+
+ //console.log(`${Mark.fullName}'s mass is ${Mark.markmass()}`);
+
+ let John={
+   fullName:'John cena',
+   //BMI:'',
+
+  calcJohnBMI: function(){
+     let mass=prompt(`Enter the mass of ${this.fullName}`);
+     let height=prompt(`Enter the height of ${this.fullName}`);
+     this.BMI=(mass/(height*height));
+    return (mass/(height*height));
+  }
+};
+
+Mark.calcMarkBMI();
+John.calcJohnBMI();
+
+if(Mark.BMI>John.BMI){
+   console.log(`Mark's BMI (${Mark.BMI}) is greater than John's (${John.BMI})`);
+}
+else if(Mark.BMI<John.BMI){
+   console.log(`Mark's BMI (${Mark.BMI}) is lower than John's (${John.BMI})`);
+}
+else if(Mark.BMI=John.BMI){
+   console.log(`Mark's BMI (${Mark.BMI}) is equal to John's (${John.BMI})`);
+}
+else{
+   console.log(`Sorry, something went wrong! (${Mark.BMI}) (${John.BMI})`);
+}
+ 
+
+ 
