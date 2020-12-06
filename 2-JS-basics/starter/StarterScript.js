@@ -64,7 +64,7 @@ let avgKoalas= avgScore(koalasFirst,koalasSecond,koalasThird);
  //Object Methods
 
 
-
+/*
  let Mark={
      fullName:'Mark Zuckerberg',
     // BMI:'',
@@ -106,6 +106,6 @@ else if(Mark.BMI=John.BMI){
 else{
    console.log(`Sorry, something went wrong! (${Mark.BMI}) (${John.BMI})`);
 }
- 
+ */
 
  
