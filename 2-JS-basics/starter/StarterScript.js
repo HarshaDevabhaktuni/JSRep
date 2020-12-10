@@ -105,14 +105,30 @@ else{
 
 //Loops
 
+/*
 let obj={
 arr: [17,21,23],
 
 printforecast:function(array){
 
    for (i = 0; i < array.length; i++) {
-      console.log(`${array[i]}'c in ${i} days`);
+      console.log(`${array[i]}'c in ${i+1} days`);
     }
+}
+}
+
+obj.printforecast(obj.arr);
+*/
+
+let obj={
+arr: [17,21,23],
+
+printforecast:function(array){
+str='';
+   for (i = 0; i < array.length; i++) {
+      str+=(`...${array[i]}'c in ${i+1} days`);
+      }
+      console.log(str);
 }
 }
 
