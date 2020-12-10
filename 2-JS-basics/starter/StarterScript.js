@@ -1,4 +1,3 @@
-
 /*
 let country= prompt('Which Country are you form?');
 let continent='Asia';
@@ -7,7 +6,6 @@ console.log("I'm from " + country + ". It's in " + continent + ". It has a total
 
 alert("I'm from " + country + ". It's in " + continent + ". It has a total population of " +population + "!");
 */
-
 
 /*
 alert(`Welcome to the Gymnastics competetion 2020! 👻 \n           It's Dolphins 🐬 vs Koalas 🐨`);
@@ -35,8 +33,7 @@ function favgKoalas(koalasFirst,koalasSecond,koalasThird){
     return (koalasFirst+koalasSecond+koalasThird)/3;
     }*/
 
-
-    /*
+/*
 let avgKoalas= avgScore(koalasFirst,koalasSecond,koalasThird);
 
  if(avgDolphins>avgKoalas){
@@ -60,9 +57,7 @@ let avgKoalas= avgScore(koalasFirst,koalasSecond,koalasThird);
 
  */
 
- 
- //Object Methods
-
+//Object Methods
 
 /*
  let Mark={
@@ -108,4 +103,19 @@ else{
 }
  */
 
- 
+//Loops
+
+let obj={
+arr: [17,21,23],
+
+printforecast:function(array){
+
+   for (i = 0; i < array.length; i++) {
+      console.log(`${array[i]}'c in ${i} days`);
+    }
+}
+}
+
+obj.printforecast(obj.arr);
+
+
