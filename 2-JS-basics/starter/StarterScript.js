@@ -120,18 +120,21 @@ printforecast:function(array){
 obj.printforecast(obj.arr);
 */
 
-let obj={
-arr: [17,21,23],
+let obj = {
+  arr: [17, 21, 23],
 
-printforecast:function(array){
-str='';
-   for (i = 0; i < array.length; i++) {
-      str+=(`...${array[i]}'c in ${i+1} days`);
-      }
-      console.log(str);
-}
-}
+  printforecast: function (array) {
+    let str = "";
+    for (i = 0; i < array.length; i++) {
+      str += `...${array[i]}'c in ${i + 1} days`;
+    }
+    return str;
+  },
+};
 
-obj.printforecast(obj.arr);
+window.onload = function () {
+  document.getElementById("div1").innerText = obj.printforecast(obj.arr);
+};
 
+setTimeout(function(){document.getElementById("div2").innerText = obj.printforecast(obj.arr)},5000);
 
